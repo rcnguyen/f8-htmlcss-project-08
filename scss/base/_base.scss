@@ -1,0 +1,48 @@
+@use "../abstracts";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: var(--body-color);
+    font-family: Gordita, sans-serif;
+    font-size: 1.6rem;
+    background: var(--body-bg-color);
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: inherit;
+    color: inherit;
+    outline: none;
+}
+
+i,
+em {
+    font-style: italic;
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+.icon {
+    filter: var(--icon-color);
+}
+
+.container {
+    @include abstracts.screen(xxl) {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}

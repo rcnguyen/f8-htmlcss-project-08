@@ -1,0 +1,131 @@
+@use "../abstracts";
+
+.footer {
+    padding: 40px 0;
+    background: var(--header-bg-color);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+    @include abstracts.screen(sm) {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+    }
+
+    &__act {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        flex-grow: 1;
+        max-width: 445px;
+
+        &-input {
+            color: #000;
+            height: 50px;
+            border-radius: 8px;
+            width: 100%;
+            padding: 0 20px;
+            font-weight: 700;
+            outline: none;
+            border: 1px solid #ccc;
+        }
+
+        &-submit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            cursor: pointer;
+            color: #1a162e;
+            height: 50px;
+            margin-left: 15px;
+            padding: 0 10px;
+            width: 40%;
+            border-radius: 8px;
+            background: #ffb700;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+
+    &__info {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        &-title {
+            color: var(--text-color);
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 150%;
+            margin-bottom: 10px;
+
+            @include abstracts.screen(sm) {
+                font-size: 1.4rem;
+            }
+        }
+
+        &-link {
+            display: block;
+            padding-top: 20px;
+            color: var(--text-color);
+
+            @include abstracts.screen(sm) {
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @include abstracts.screen(xxl) {
+            margin-top: 50px;
+        }
+
+        @include abstracts.screen(md) {
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 50px;
+        }
+
+        @include abstracts.screen(sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__copyright {
+        color: var(--text-color);
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include abstracts.screen(lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        @include abstracts.screen(lg) {
+            order: 2;
+            margin-top: 20px;
+        }
+
+        @include abstracts.screen(md) {
+            text-align: center;
+        }
+    }
+
+    &__social {
+        display: flex;
+        gap: 20px;
+
+        @include abstracts.screen(lg) {
+            order: 1;
+        }
+    }
+}

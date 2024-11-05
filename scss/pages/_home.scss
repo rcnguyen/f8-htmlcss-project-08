@@ -1,0 +1,41 @@
+@use "../abstracts";
+
+.home {
+    &__container {
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+        @include abstracts.screen(xxl) {
+            margin-top: 30px;
+        }
+    }
+
+    &__h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 141.667%;
+    }
+
+    // Categories
+
+    &__cate {
+        --grid-gutter-x: 50.5px;
+
+        @include abstracts.screen(lg) {
+            --grid-gutter-x: 25px;
+        }
+
+        @include abstracts.screen(lg) {
+            --grid-gutter-y: 20px;
+        }
+    }
+
+    // Products
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+}

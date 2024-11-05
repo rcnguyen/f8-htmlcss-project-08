@@ -1,0 +1,165 @@
+@use "../abstracts";
+
+.auth {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100dvh;
+    background: var(--auth-intro-bg);
+
+    &__intro,
+    &__content {
+        flex: 1;
+        padding: 0 30px;
+        min-height: 100dvh;
+    }
+
+    &__intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+
+        &-logo {
+            @include abstracts.screen(md) {
+                position: absolute;
+                top: 30px;
+            }
+        }
+
+        &-img {
+            max-width: 100%;
+        }
+
+        &-text {
+            color: var(--intro-text-color);
+            text-align: center;
+            max-width: 412px;
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 144.444%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.5rem;
+            }
+        }
+
+        &-next {
+            position: absolute;
+            bottom: 50px;
+        }
+    }
+
+    &__content {
+        background: var(--auth-content-bg);
+        transition: translate, 0.2s;
+
+        @include abstracts.screen(md) {
+            position: fixed;
+            inset: 0;
+            z-index: 1;
+            translate: 100%;
+            overflow-y: auto;
+
+            &.show {
+                translate: 0;
+            }
+        }
+
+        &-inner {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            width: min(460px, 100%);
+            margin: 0 auto;
+            padding: 50px 0;
+
+            @include abstracts.screen(md) {
+                padding: 30px 0;
+            }
+        }
+
+        &-heading {
+            margin-top: 50px;
+            font-size: 3rem;
+            font-weight: 500;
+            line-height: 146.667%;
+            color: var(--auth-content-heading);
+
+            @include abstracts.screen(md) {
+                font-size: 2.2rem;
+                margin-top: 60px;
+            }
+        }
+
+        &-desc {
+            text-align: center;
+            color: #9e9da8;
+            padding: 0 20px;
+            margin-top: 10px;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 146.667%;
+
+            @include abstracts.screen(md) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__form {
+        width: 100%;
+        margin-top: 30px;
+
+        @include abstracts.screen(md) {
+            margin-top: 0;
+        }
+    }
+
+    &__btn-group {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 50px !important;
+
+        @include abstracts.screen(md) {
+            gap: 20px;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        color: var(--auth-btn-color);
+
+        &-icon {
+            filter: var(--auth-btn-icon);
+        }
+    }
+
+    &__text {
+        color: #9e9da8;
+        margin-top: 108px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 144.444%;
+
+        @include abstracts.screen(md) {
+            margin-top: 30px;
+
+            font-size: 1.6rem;
+        }
+    }
+
+    &__link {
+        color: #0071dc;
+        font-weight: 500;
+        line-height: 146.667%;
+    }
+
+    &__massage {
+        margin-top: 30px;
+        margin-bottom: -30px;
+    }
+}

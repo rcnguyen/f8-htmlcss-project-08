@@ -1,0 +1,14 @@
+.massage {
+    color: #fff;
+    width: 100%;
+    background: #24ad20;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &--success {
+        background: #24ad20;
+    }
+}
