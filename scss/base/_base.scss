@@ -12,8 +12,8 @@ body {
 }
 
 button {
-    border: none;
     background: transparent;
+    border: none;
     cursor: pointer;
 }
 
@@ -40,9 +40,23 @@ strong {
     filter: var(--icon-color);
 }
 
+.separate {
+    margin: var(--margin) 0;
+    height: 1px;
+    background: var(--separate-color);
+}
+
 .container {
     @include abstracts.screen(xxl) {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--text-color);
+    -webkit-box-shadow: 0 0 0px 40rem var(--input-autofill-bg) inset;
+    caret-color: var(--input-autofill-color) !important;
 }

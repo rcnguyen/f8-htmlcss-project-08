@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Grocery Mark</title>
+        <title>Payment | Grocery Mark</title>
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="./assets/favicon/favicon-48x48.png" sizes="48x48" />
@@ -71,8 +71,8 @@
 
                 <!-- Payment content -->
                 <div class="checkout-container">
-                    <div class="row">
-                        <div class="col-8 col-xl-12">
+                    <div class="row gy-xl-3">
+                        <div class="col-8 col-lg-12">
                             <div class="cart-info">
                                 <div class="cart-info__top">
                                     <h2 class="cart-info__h2">1. Shipping, arrives between Mon, May 16—Tue, May 24</h2>
@@ -83,7 +83,7 @@
                                 </div>
                                 <!-- Payment item 1 -->
                                 <article class="payment-item">
-                                    <div class="payment-item__content">
+                                    <div class="payment-item__info">
                                         <h3 class="payment-item__title">Imran Khan</h3>
                                         <p class="payment-item__desc">Museum of Rajas, Sylhet Sadar, Sylhet 3100.</p>
                                     </div>
@@ -91,7 +91,7 @@
 
                                 <!-- Payment item 2 -->
                                 <article class="payment-item">
-                                    <div class="payment-item__content">
+                                    <div class="payment-item__info">
                                         <h3 class="payment-item__title">Items details</h3>
                                         <p class="payment-item__desc">2 items</p>
                                     </div>
@@ -112,20 +112,22 @@
                                             class="payment-item__thumb"
                                         />
                                         <div class="payment-item__content">
-                                            <h3 class="payment-item__title">Fedex Delivery</h3>
-                                            <p class="payment-item__desc payment-item__desc--low">
-                                                Delivery: 2-3 days work
-                                            </p>
+                                            <div class="payment-item__info">
+                                                <h3 class="payment-item__title">Fedex Delivery</h3>
+                                                <p class="payment-item__desc payment-item__desc--low">
+                                                    Delivery: 2-3 days work
+                                                </p>
+                                            </div>
+                                            <span class="cart-info__checkbox payment-item__checkbox">
+                                                <input
+                                                    type="radio"
+                                                    name="delivery-method"
+                                                    checked
+                                                    class="cart-info__checkbox-input payment-item__checkbox-input"
+                                                />
+                                                <span class="payment-item__cost">Free</span>
+                                            </span>
                                         </div>
-                                        <span class="cart-info__checkbox payment-item__checkbox">
-                                            <input
-                                                type="radio"
-                                                name="delivery-method"
-                                                checked
-                                                class="cart-info__checkbox-input payment-item__checkbox-input"
-                                            />
-                                            <span class="payment-item__cost">Free</span>
-                                        </span>
                                     </article>
                                 </label>
 
@@ -138,25 +140,27 @@
                                             class="payment-item__thumb"
                                         />
                                         <div class="payment-item__content">
-                                            <h3 class="payment-item__title">DHL Delivery</h3>
-                                            <p class="payment-item__desc payment-item__desc--low">
-                                                Delivery: 2-3 days work
-                                            </p>
+                                            <div class="payment-item__info">
+                                                <h3 class="payment-item__title">DHL Delivery</h3>
+                                                <p class="payment-item__desc payment-item__desc--low">
+                                                    Delivery: 2-3 days work
+                                                </p>
+                                            </div>
+                                            <span class="cart-info__checkbox payment-item__checkbox">
+                                                <input
+                                                    type="radio"
+                                                    name="delivery-method"
+                                                    class="cart-info__checkbox-input payment-item__checkbox-input"
+                                                />
+                                                <span class="payment-item__cost">$12.00</span>
+                                            </span>
                                         </div>
-                                        <span class="cart-info__checkbox payment-item__checkbox">
-                                            <input
-                                                type="radio"
-                                                name="delivery-method"
-                                                class="cart-info__checkbox-input payment-item__checkbox-input"
-                                            />
-                                            <span class="payment-item__cost">$12.00</span>
-                                        </span>
                                     </article>
                                 </label>
                             </div>
                         </div>
 
-                        <div class="col-4 col-xl-12">
+                        <div class="col-4 col-lg-12">
                             <div class="cart-info">
                                 <h2 class="cart-info__h2">Payment Details</h2>
                                 <p class="cart-info__desc">
@@ -232,7 +236,7 @@
                                                     name="card-expire"
                                                     id="card-expire"
                                                     placeholder="MM/YY"
-                                                    class="form__inpu"
+                                                    class="form__input"
                                                     required
                                                 />
                                             </div>
@@ -270,21 +274,6 @@
                                 </div>
                                 <a href="#!" class="cart-info__next-btn btn btn--primary btn--rounded">
                                     Continue to checkout
-                                </a>
-                            </div>
-                            <div class="cart-info">
-                                <a href="#!">
-                                    <article class="gift-item">
-                                        <div class="gift-item__icon-wrap">
-                                            <img src="./assets/icons/gift.svg" alt="" class="gift-item__icon" />
-                                        </div>
-                                        <div class="gift-item__content">
-                                            <h3 class="gift-item__title">Send this order as a gift.</h3>
-                                            <p class="gift-item__desc">
-                                                Available items will be shipped to your gift recipient.
-                                            </p>
-                                        </div>
-                                    </article>
                                 </a>
                             </div>
                         </div>

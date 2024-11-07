@@ -178,6 +178,11 @@ $error-color: #a15243;
 
     &__row {
         display: flex;
+        gap: 10px;
+
+        @include abstracts.screen(sm) {
+            flex-direction: column;
+        }
     }
 
     &__separate {
@@ -222,6 +227,7 @@ $error-color: #a15243;
     }
 
     &__group {
+        flex: 1;
         margin-top: 30px;
 
         &-inline {
@@ -279,6 +285,7 @@ $error-color: #a15243;
     &__input {
         flex: 1;
         height: 100%;
+        width: 100%;
 
         font-size: 1.8rem;
         font-weight: 500;

@@ -1,0 +1,12 @@
+@use "../abstracts";
+.form-card {
+    &__row {
+        gap: 30px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+    }
+}

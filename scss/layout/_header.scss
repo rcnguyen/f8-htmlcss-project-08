@@ -6,6 +6,11 @@
 }
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     background: var(--header-bg-color);
     @include abstracts.screen(lg) {
         box-shadow: 0px 20px 60px 10px var(--header-shadow-color);
@@ -249,6 +254,19 @@
         border-radius: 8px;
         box-shadow: 0px 4px 14px 2px rgba(0, 0, 0, 0.08);
     }
+
+    &__user {
+        position: relative;
+    }
+
+    &__arrow {
+        right: 15px !important;
+    }
+
+    &__dropdown {
+        right: -6px !important;
+        width: min(300px, 100vw) !important;
+    }
 }
 
 .nav-btn {
@@ -404,5 +422,44 @@
         font-size: 1.5rem;
         font-weight: 500;
         line-height: 146.667%;
+    }
+}
+
+.user-menu {
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__avatar {
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    &__name {
+        margin-bottom: 8px;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    &__list {
+        margin-top: 30px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 14px 0;
+
+        &:hover {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+    &__separate {
+        margin-top: 10px;
+        padding-top: 10px;
+        border-top: 2px solid #b9babe;
     }
 }

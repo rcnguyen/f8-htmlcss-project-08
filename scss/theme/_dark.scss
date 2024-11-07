@@ -12,10 +12,13 @@ html.dark {
     --top-act-group-separate: #ededf6;
 
     --text-color: #b9babe;
+    --separate-color: #292e39;
+    --input-autofill-bg: #171c28;
+    --input-autofill-color: #fff;
 
     // Header
     --header-act-dropdown-bg: #292e39;
-    --header-act-dropdown-shadow: rgba(200, 200, 200, 0.4);
+    --header-act-dropdown-shadow: rgba(23, 28, 40, 0.4);
     --header-act-dropdown-border-color: #171c28;
 
     // Dropdown
@@ -112,6 +115,19 @@ html.dark {
     --cart-info-shadow: rgba(23, 28, 40, 0.2);
     --cart-info-border-color: #292e39;
     --cart-info-gift-shadow: rgba(23, 28, 40, 0.2);
+
+    // Payment
+    --payment-item-bg: #292e39;
+
+    // Profile
+
+    --profile-sidebar-bg: #171c28;
+    --profile-sidebar-shadow: rgba(23, 28, 40, 0.2);
+
+    // Account Info
+
+    --account-info-bg: #292e39;
+    --account-info-icon-bg: #171c28;
 
     // Dialog
     --dialog-bg: #2f3441;

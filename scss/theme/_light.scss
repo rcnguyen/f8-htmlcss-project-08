@@ -12,6 +12,9 @@ html {
     --top-act-group-separate: #ededf6;
 
     --text-color: #1a162e;
+    --separate-color: #d2d1d6;
+    --input-autofill-bg: #fff;
+    --input-autofill-color: #1a162e;
 
     // Header
     --header-act-dropdown-bg: #fff;
@@ -110,7 +113,17 @@ html {
     --cart-info-gift-shadow: rgba(237, 237, 246, 0.2);
 
     // Payment
+
     --payment-item-bg: #f6f6f6;
+
+    // Profile
+
+    --profile-sidebar-bg: #fff;
+    --profile-sidebar-shadow: rgba(237, 237, 246, 0.2);
+
+    // Account Info
+    --account-info-bg: #f6f6f6;
+    --account-info-icon-bg: #fff;
 
     // Dialog
     --dialog-bg: #fff;
